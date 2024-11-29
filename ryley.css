@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: cyan;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff; /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.profile p {
+    flex: 1;
+    font-size: 1.2rem;
+    color: #444;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+.favorite {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.favorite h2 {
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.favorite p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+
+.left-image,
+.right-image,
+.center-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.left-image {
+    float: left;
+    margin-right: 15px;
+}
+
+.right-image {
+    float: right;
+    margin-left: 15px;
+}
+
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-image,
+    .right-image {
+        margin: 10px 0;
+        float: none;
+    }
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green background */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+}
